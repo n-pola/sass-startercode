@@ -1,0 +1,60 @@
+html, body{
+  font-family: PTsans;
+  font-size: 16px;
+  line-height: 140%;
+  font-weight: 300;
+  padding: 1em;
+  hyphens: auto;
+  color: #444;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+main{
+  max-width: 50rem;
+  margin-left: 20rem;
+}
+
+h1, h2, h3, h4, p, blockquote{
+  margin-bottom: 1.4em;
+}
+
+blockquote{
+  font-family: PTserif;
+  color: #000;
+}
+
+blockquote:before{
+  content: "«";
+  padding-right: 0.1em;
+}
+
+blockquote:after{
+  content: "»";
+  padding-left: 0.1em;
+}
+
+h1, h2, h3, h4{
+  line-height: 110%;
+  font-weight: 600;
+}
+
+
+h1{
+  font-size: 2rem;
+}
+
+h2{
+  font-size: 1.4rem;
+}
+
+h3{
+  font-size: 1.2rem;
+}
+
+
+section{
+  margin-bottom: 2em;
+}

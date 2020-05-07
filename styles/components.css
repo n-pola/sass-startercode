@@ -1,0 +1,10 @@
+.marginalie{
+  font-family: Raleway;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 20rem;
+  float: left;
+  margin-left: -20rem;
+  margin-bottom: 0;
+  text-align: right;
+}
