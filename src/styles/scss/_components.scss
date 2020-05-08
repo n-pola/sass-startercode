@@ -1,10 +1,48 @@
-.marginalie{
-  font-family: Raleway;
-  padding-left: 1em;
-  padding-right: 1em;
-  width: 20rem;
-  float: left;
-  margin-left: -20rem;
-  margin-bottom: 0;
-  text-align: right;
+.main-header {
+  background-image: url("../images/NGC_2818_by_the_Hubble_Space_Telescope.jpg");
+  padding: $m;
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__headline {
+    color: $lightest;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+  }
+}
+
+.main-content {
+  padding: $m;
+  max-width: 50rem;
+  transition: all $tr-fast ease;
+}
+
+.marginalie {
+  font-family: $font-family-serif;
+  color: $decoration-color;
+  border-left: $border-width solid $decoration-color;
+  padding-left: $m;
+
+  &--image {
+    border-left: none;
+  }
+}
+
+@media screen and (min-width: $vp-small) {
+  .marginalie {
+    padding-right: $m;
+    float: left;
+    width: $width-marginalie;
+    margin-left: -$width-marginalie;
+    margin-bottom: 0;
+    text-align: right;
+    border-left: 0;
+  }
+
+  .main-content {
+    margin-left: $width-marginalie;
+  }
 }

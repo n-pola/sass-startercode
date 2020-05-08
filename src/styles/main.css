@@ -119,23 +119,34 @@ Using Lucas Numbers 1, 3, 4, 7, 11, 18, 29, 47, 76,
 ---------------------------------------------------------------------------- */
 /* Functional Properties
 ---------------------------------------------------------------------------- */
+/* VP
+---------------------------------------------------------------------------- */
+/* Transitions
+---------------------------------------------------------------------------- */
+/* Misc
+---------------------------------------------------------------------------- */
 * {
   box-sizing: border-box; }
 
-html, body {
+html,
+body {
   font-family: PTsans;
   font-size: 18px;
   line-height: 130%;
   font-weight: 400;
-  padding: 18px;
   hyphens: auto;
   color: #666; }
 
-main {
-  max-width: 50rem;
-  margin-left: 20rem; }
+img {
+  width: 100%;
+  height: auto; }
 
-h1, h2, h3, h4, p, blockquote {
+h1,
+h2,
+h3,
+h4,
+p,
+blockquote {
   margin-bottom: 29px; }
 
 blockquote {
@@ -150,10 +161,13 @@ blockquote:after {
   content: "»";
   padding-left: 0.1em; }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   line-height: 100%;
   font-weight: 600;
-  color: #f0b505; }
+  color: #6fa7d8; }
 
 h1 {
   font-size: 47px; }
@@ -167,14 +181,42 @@ h3 {
 section {
   margin-bottom: 29px; }
 
+.main-header {
+  background-image: url("../images/NGC_2818_by_the_Hubble_Space_Telescope.jpg");
+  padding: 18px;
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .main-header__headline {
+    color: #fff;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.9); }
+
+.main-content {
+  padding: 18px;
+  max-width: 50rem;
+  transition: all 0.2s ease; }
+
 .marginalie {
-  font-family: Raleway;
-  padding-left: 1em;
-  padding-right: 1em;
-  width: 20rem;
-  float: left;
-  margin-left: -20rem;
-  margin-bottom: 0;
-  text-align: right; }
+  font-family: PTserif;
+  color: #f09e05;
+  border-left: 2px solid #f09e05;
+  padding-left: 18px; }
+  .marginalie--image {
+    border-left: none; }
+
+@media screen and (min-width: 50rem) {
+  .marginalie {
+    padding-right: 18px;
+    float: left;
+    width: 20rem;
+    margin-left: -20rem;
+    margin-bottom: 0;
+    text-align: right;
+    border-left: 0; }
+  .main-content {
+    margin-left: 20rem; } }
 
 /*# sourceMappingURL=main.css.map */
