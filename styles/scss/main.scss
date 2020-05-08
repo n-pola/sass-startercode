@@ -1,0 +1,7 @@
+$darkest: hsla(0, 0, 0, 100);
+$lightest: hsla(0, 0, 100, 100);
+
+body {
+  background-color: $darkest;
+  color: $lightest;
+}
