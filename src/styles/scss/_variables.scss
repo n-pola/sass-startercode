@@ -7,24 +7,21 @@ $m: 18px;
 $l: 29px;
 $xl: 47px;
 
+
 /* Font Properties
 ---------------------------------------------------------------------------- */
 $font-family-serif: PTserif;
 $font-family-sans: PTsans;
 $base-font-size: $m;
-$font-icons: "Material Icons";
+$font-icons: 'Material Icons';
 
-$font-xl: 2rem;
-$font-l: 1.4rem;
-$font-m: 1.2rem;
-
-$font-margin: 1.4em;
 
 /* Font Weights
 ---------------------------------------------------------------------------- */
 $fw-light: 300;
 $fw-normal: 400;
 $fw-bold: 600;
+
 
 /* Line Heights
 ---------------------------------------------------------------------------- */
@@ -33,14 +30,27 @@ $lh-default: 130%;
 $lh-loose: 150%;
 
 /* Colors
------------------------------------------------------------------------------*/
-$text-color: #444;
-$text-color-dark: #000;
+---------------------------------------------------------------------------- */
+$dark: #666;
+$darker: #333;
+$darkest: #000;
+$darken: rgba(0,0,0,0.3);
 
-/* Spacings
------------------------------------------------------------------------------*/
-$site-width: 50rem;
-$margin-l: 20rem;
-$margin-s: 2em;
-$padding-base: 1em;
-$padding-s: 0.1em;
+$light: #ddd;
+$lighter: #eee;
+$lightest: #fff;
+$lighten: rgba(255,255,255,0.3);
+
+$red: hsla(354, 85, 64, 1);
+$dark-blue: hsla(208, 80, 41, 1);
+$blue: hsla(208, 57, 64, 1);
+$orange-light: hsla(45, 96, 48, 1);
+$orange: hsla(39, 96, 48, 1);
+
+
+/* Functional Properties
+---------------------------------------------------------------------------- */
+$text-color: $dark;
+$headline-color: $orange-light;
+$interaction-color: $red;
+$decoration-color: $orange;

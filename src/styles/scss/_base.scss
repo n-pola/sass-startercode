@@ -1,67 +1,62 @@
-html,
-body {
+
+*{
+  box-sizing: border-box;
+}
+
+html, body{
   font-family: $font-family-sans;
   font-size: $m;
   line-height: $lh-default;
-  font-weight: $fw-light;
-  padding: $padding-base;
+  font-weight: $fw-normal;
+  padding: $m;
   hyphens: auto;
   color: $text-color;
 }
 
-* {
-  box-sizing: border-box;
+main{
+  max-width: 50rem;
+  margin-left: 20rem;
 }
 
-main {
-  max-width: $site-width;
-  margin-left: $margin-l;
+h1, h2, h3, h4, p, blockquote{
+  margin-bottom: $l;
 }
 
-h1,
-h2,
-h3,
-h4,
-p,
-blockquote {
-  margin-bottom: $font-margin;
-}
-
-blockquote {
+blockquote{
   font-family: $font-family-serif;
-  color: $text-color-dark;
+  color: $darkest;
 }
 
-blockquote:before {
+blockquote:before{
   content: "«";
-  padding-right: $padding-s;
+  padding-right: 0.1em;
 }
 
-blockquote:after {
+blockquote:after{
   content: "»";
-  padding-left: $padding-s;
+  padding-left: 0.1em;
 }
 
-h1,
-h2,
-h3,
-h4 {
+h1, h2, h3, h4{
   line-height: $lh-tight;
   font-weight: $fw-bold;
+  color: $headline-color;
 }
 
-h1 {
-  font-size: $font-xl;
+
+h1{
+  font-size: $xl;
 }
 
-h2 {
-  font-size: $font-l;
+h2{
+  font-size: $l;
 }
 
-h3 {
-  font-size: $font-m;
+h3{
+  font-size: $m;
 }
 
-section {
-  margin-bottom: $margin-s;
+
+section{
+  margin-bottom: $l;
 }
