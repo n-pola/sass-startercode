@@ -4,10 +4,21 @@
   "description": "TH Koeln SS2021 Frontend Development",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev:css": "node-sass --source-map true styles/scss/main.scss -o styles/",
-    "watch:sass": "node-sass --source-map true --watch styles/scss/main.scss -o styles/",
-    "watch": "npm-run-all --parallel dev:css watch:*"
+    "dev:css": "node-sass --source-map true src/styles/scss src/styles/scss/main.scss -o src/styles/",
+    "watch:sass": "node-sass --source-map true --watch src/styles/scss src/styles/scss/main.scss -o src/styles/",
+    "watch": "npm-run-all --parallel dev:css watch:*",
+    "//": " --- PROD --- ",
+    "build:clean": "npm run clean && npm run mkdirs",
+    "build:copy": "npm run copy",
+    "build:css": "node-sass --include-path src/styles/scss src/styles/scss/main.scss dist/styles/main.css --output-style compressed",
+    "build": "npm run build:clean && npm run build:copy && npm run build:css",
+    "//": " --- BUILD (GENERIC) --- ",
+    "clean": "rimraf dist",
+    "mkdirs": "mkdir -p dist/js && mkdir -p dist/styles && mkdir -p dist/assets && mkdir -p dist/images",
+    "copy:assets": "cp -r src/assets/* dist/assets/",
+    "copy:images": "cp -r src/images/* dist/images/",
+    "copy:html": "find src -name '*.html' -type f -exec cp {} dist \\;",
+    "copy": "npm run copy:assets && npm run copy:html && npm run copy:images"
   },
   "repository": {
     "type": "git",
