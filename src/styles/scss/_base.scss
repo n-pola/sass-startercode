@@ -1,0 +1,67 @@
+html,
+body {
+  font-family: $font-family-sans;
+  font-size: $m;
+  line-height: $lh-default;
+  font-weight: $fw-light;
+  padding: $padding-base;
+  hyphens: auto;
+  color: $text-color;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  max-width: $site-width;
+  margin-left: $margin-l;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+blockquote {
+  margin-bottom: $font-margin;
+}
+
+blockquote {
+  font-family: $font-family-serif;
+  color: $text-color-dark;
+}
+
+blockquote:before {
+  content: "«";
+  padding-right: $padding-s;
+}
+
+blockquote:after {
+  content: "»";
+  padding-left: $padding-s;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: $lh-tight;
+  font-weight: $fw-bold;
+}
+
+h1 {
+  font-size: $font-xl;
+}
+
+h2 {
+  font-size: $font-l;
+}
+
+h3 {
+  font-size: $font-m;
+}
+
+section {
+  margin-bottom: $margin-s;
+}
